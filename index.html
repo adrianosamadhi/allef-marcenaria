@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Allef Marcenaria — Móveis Sob Medida de Alto Padrão</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "amber-gold": "#d97706", // Amber 600
+                        "amber-gold-dark": "#b45309", // Amber 700
+                        "wood-deep": "#362511",
+                        "wood-warm": "#5a4136",
+                        "surface": "#fcf9f7",
+                        "on-surface": "#1b1c1b",
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "2px",
+                        "xl": "4px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .wood-gradient {
+            background: linear-gradient(to bottom, rgba(54, 37, 17, 0.85), rgba(54, 37, 17, 0.95));
+        }
+        .rich-overlay {
+            background: linear-gradient(to right, #1b1c1b 0%, rgba(27, 28, 27, 0.8) 40%, transparent 100%);
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md">
+        <div class="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
+            <span class="font-serif text-xl font-bold text-stone-900 dark:text-stone-50 tracking-tighter">Allef Souza<span class="block text-[10px] uppercase tracking-[0.3em] font-sans font-light text-stone-500 dark:text-stone-400 mt-0.5">Marcenaria</span></span>
+            <div class="hidden md:flex items-center gap-8 font-serif text-base tracking-tight">
+                <a class="text-amber-700 dark:text-amber-500 border-b-2 border-amber-700 pb-1" href="#">Início</a>
+                <a class="text-stone-800 dark:text-stone-200 hover:text-amber-600 transition-colors" href="#servicos">Serviços</a>
+                <a class="text-stone-800 dark:text-stone-200 hover:text-amber-600 transition-colors" href="#galeria">Galeria</a>
+                <a class="text-stone-800 dark:text-stone-200 hover:text-amber-600 transition-colors" href="#sobre">Sobre</a>
+                <a class="text-stone-800 dark:text-stone-200 hover:text-amber-600 transition-colors" href="#contato">Contato</a>
+            </div>
+            <a class="bg-stone-900 text-white px-5 py-1.5 rounded-none font-medium hover:bg-amber-gold transition-all scale-95 duration-200 ease-in-out uppercase text-[10px] tracking-widest" href="https://wa.me/5511979861292" target="_blank">
+                Orçamento
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[80vh] min-h-[600px] flex items-center pt-12 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover scale-105" data-alt="premium woodworking workshop with professional tools and warm atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWmatKJw3oKXFu2bKO_-cRNof64s33BzP49XSMdQNqFcTdbB_xaswjOsm7wqAsEUW9bxsXuxXBIVbQFGnjsES7fwxW8KOeBUiszd9PgU7TkddsxYS-Vnt0xsww7Ia31XYzM0zPh12UnuzTRFCuitTTFTPpgab20mErC-wtcGj3eEHXXRq5By-5ZEev9aRwn2LD8mQ7vpWeanBI8ct8mhZpOwWz-FN6s8TMb482CnM0UhJWMRdT2lfojJnR_VjxTjuFpSUHw0e5HQM"/>
+            <div class="absolute inset-0 rich-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+            <div class="max-w-3xl">
+                <span class="inline-block px-3 py-1 bg-amber-gold text-white text-[10px] tracking-[0.2em] uppercase font-bold mb-4">Artesanal &amp; Exclusivo</span>
+                <h1 class="font-headline text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tighter mb-4 text-balance">Móveis Planejados Sob Medida para <span class="text-amber-gold">Transformar Seu Espaço</span></h1>
+                <p class="text-base md:text-lg text-stone-300 leading-relaxed mb-8 font-light max-w-2xl">Com Allef Souza, você tem projetos exclusivos, funcionais e com acabamento impecável. Crio móveis personalizados que aproveitam cada detalhe do seu ambiente.</p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a class="inline-flex items-center justify-center bg-amber-gold text-white px-8 py-4 rounded-none font-bold text-base hover:bg-amber-gold-dark transition-all group shadow-2xl" href="https://wa.me/5511979861292?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20de%20móveis%20planejados" target="_blank">
+                        Solicitar Orçamento no WhatsApp
+                        <span class="material-symbols-outlined ml-3 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-stone-900 text-white" id="servicos">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="font-headline text-4xl md:text-5xl font-black mb-4 tracking-tight">Ambientes <span class="text-amber-gold">Planejados</span></h2>
+                    <p class="text-stone-400 text-base">Diferenciais: Projetos 100% personalizados, Máximo aproveitamento de espaço, Acabamento de alto padrão, Materiais resistentes, Compromisso com prazos, Atendimento direto.</p>
+                </div>
+                <div class="w-24 h-px bg-amber-gold mb-4 hidden md:block"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+                <!-- Service Card 1 -->
+                <div class="group bg-stone-800 p-8 lg:p-12 hover:bg-amber-gold transition-all duration-500 aspect-square flex flex-col justify-between border border-stone-700/50">
+                    <span class="material-symbols-outlined text-5xl text-amber-gold group-hover:text-white transition-colors" data-icon="construction">construction</span>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-stone-900 transition-colors">Cozinhas planejadas</h3>
+                        <p class="text-stone-400 group-hover:text-stone-900/80 transition-colors font-light text-sm">Projetos 100% personalizados com máximo aproveitamento de espaço e acabamento de alto padrão.</p>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="group bg-stone-800 p-8 lg:p-12 hover:bg-amber-gold transition-all duration-500 aspect-square flex flex-col justify-between border border-stone-700/50">
+                    <span class="material-symbols-outlined text-5xl text-amber-gold group-hover:text-white transition-colors" data-icon="square_foot">square_foot</span>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-stone-900 transition-colors">Quartos e guarda-roupas</h3>
+                        <p class="text-stone-400 group-hover:text-stone-900/80 transition-colors font-light text-sm">Soluções inteligentes para dormitórios, closets e sistemas de organização sob medida.</p>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="group bg-stone-800 p-8 lg:p-12 hover:bg-amber-gold transition-all duration-500 aspect-square flex flex-col justify-between border border-stone-700/50">
+                    <span class="material-symbols-outlined text-5xl text-amber-gold group-hover:text-white transition-colors" data-icon="shelves">shelves</span>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-stone-900 transition-colors">Salas e painéis</h3>
+                        <p class="text-stone-400 group-hover:text-stone-900/80 transition-colors font-light text-sm">Painéis de TV, home theaters e estantes que aliam design contemporâneo e funcionalidade.</p>
+                    </div>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="group bg-stone-800 p-8 lg:p-12 hover:bg-amber-gold transition-all duration-500 aspect-square flex flex-col justify-between border border-stone-700/50">
+                    <span class="material-symbols-outlined text-5xl text-amber-gold group-hover:text-white transition-colors" data-icon="tv_gen">tv_gen</span>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-stone-900 transition-colors">Banheiros</h3>
+                        <p class="text-stone-400 group-hover:text-stone-900/80 transition-colors font-light text-sm">Gabinetes e armários resistentes à umidade com design sofisticado para seu bem-estar.</p>
+                    </div>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="group bg-stone-800 p-8 lg:p-12 hover:bg-amber-gold transition-all duration-500 aspect-square flex flex-col justify-between border border-stone-700/50">
+                    <span class="material-symbols-outlined text-5xl text-amber-gold group-hover:text-white transition-colors" data-icon="handyman">handyman</span>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-stone-900 transition-colors">Ambientes comerciais</h3>
+                        <p class="text-stone-400 group-hover:text-stone-900/80 transition-colors font-light text-sm">Mobiliário para escritórios, consultórios e lojas focado em produtividade e imagem de marca.</p>
+                    </div>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="group bg-stone-800 p-8 lg:p-12 hover:bg-amber-gold transition-all duration-500 aspect-square flex flex-col justify-between border border-stone-700/50">
+                    <span class="material-symbols-outlined text-5xl text-amber-gold group-hover:text-white transition-colors" data-icon="home_repair_service">home_repair_service</span>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-stone-900 transition-colors">Projetos sob medida</h3>
+                        <p class="text-stone-400 group-hover:text-stone-900/80 transition-colors font-light text-sm">Criações únicas para necessidades específicas, transformando qualquer ideia em realidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-12 bg-amber-gold text-stone-900">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-2 gap-8 text-center md:grid-cols-3">
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-3xl mb-3">person_check</span>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em]">Atendimento personalizado</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-3xl mb-3">architecture</span>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em]">Projetos sob medida</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-3xl mb-3">verified</span>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em]">Qualidade garantida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-stone-50" id="galeria">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-4xl md:text-5xl font-black text-stone-900 mb-4 tracking-tight">Nossos Projetos <span class="text-amber-gold">Reais</span></h2>
+                <div class="w-16 h-1 bg-amber-gold mx-auto mb-6"></div>
+                <p class="text-stone-500 max-w-2xl mx-auto text-sm">Confira os detalhes e o acabamento impecável de nossas execuções recentes.</p>
+            </div>
+            <!-- Modern Grid Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 9: Panel -->
+                <div class="gallery-item relative aspect-[3/4] overflow-hidden bg-stone-200 group">
+                    <img alt="Painel ripado com mármore e iluminação LED" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0ugLyoc1LQwbpgBh3_fhFwiNLlWTHmJNaUytltyBgST4WvuCcXL6sbB-BI3lPUuSZcx4QE6zbPSV-9cVy2deHasCp42aY4XzYVmFbsDwiSTVAhmoDPiiEpRUD6x1g76Op9dW7zPw5emQ7xn9A4RHzVzrFbMqE__SuRTMQPXwar5p84PhGWJPj3Jz4JXjvH6pSXoMmkQvcQ9JKv_1Eig9DeMER1GhrDb-2t7up8KXG6VUZFDtIoFl7GO69tXVXxr85bCDCNsQdtpQBw"/>
+                    <div class="gallery-overlay absolute inset-0 bg-stone-900/60 flex items-end p-6 opacity-0 transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div>
+                            <span class="text-amber-gold text-[10px] font-bold uppercase tracking-widest mb-1 block">Living</span>
+                            <h4 class="text-white font-headline text-xl font-bold">Painel Home Theater</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 5: Kitchen -->
+                <div class="gallery-item relative aspect-[3/4] overflow-hidden bg-stone-200 group">
+                    <img alt="Cozinha planejada com armários superiores e inferiores" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujOoX0xOVNejauXqZt8xOP3ul3x7tAdOnXtzeMqQrMnN5NmThQRYlYvBZB5m9yDm6wOzmvAbUAHcU9gZW-_m-u3tq-ERmAVWT2TdjJMct3Fm_k_lp9L7F_7W_deRfMlLw0EIM8dEXYueeY5lRnPpLe7KDyE-Jmi1mnCtzl1pZuZSp7i2RmzWy0aIn0HKIZABatgBgqx4nZDHywRvXMN1OkcYGCVBCTy5pJHcqnb2F5iy6iw3vwb8XcUnTPx75wz1NgwjwFeaJpO0Q"/>
+                    <div class="gallery-overlay absolute inset-0 bg-stone-900/60 flex items-end p-6 opacity-0 transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div>
+                            <span class="text-amber-gold text-[10px] font-bold uppercase tracking-widest mb-1 block">Gourmet</span>
+                            <h4 class="text-white font-headline text-xl font-bold">Cozinha Planejada</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 8: Dressing Table -->
+                <div class="gallery-item relative aspect-[3/4] overflow-hidden bg-stone-200 group">
+                    <img alt="Penteadeira e closet com espelho grande e gaveteiro" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhTUwBEXgszUbL8ZiyLri3VBBYumy221gqolXcqDy04R3BT-rjb2Zx-DxzBaOGb0e_PqSgGiNHnSSJjb3plIa6J_617ALoV7d1cToT1t6wWM4FnrlGxlQmOanA_0Ld8FExXkTDSCBhgbIWzKcKKaoLBQaTW8lRGMMeIWQh3xRdkv-mMIhjM2Y8dQshiFQD9BYWlLZfHpkd3cpa85G140JFSrJ1OVGyp_gz4rq6HqGCIVhZ13IKrvAKr_gJJdMl9Wc1yhrSNOZiPlw"/>
+                    <div class="gallery-overlay absolute inset-0 bg-stone-900/60 flex items-end p-6 opacity-0 transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div>
+                            <span class="text-amber-gold text-[10px] font-bold uppercase tracking-widest mb-1 block">Dormitório</span>
+                            <h4 class="text-white font-headline text-xl font-bold">Suíte Master</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 6: Wardrobe -->
+                <div class="gallery-item relative aspect-[3/4] overflow-hidden bg-stone-200 group">
+                    <img alt="Armário com texturas de madeira geométrica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0ug37W4gmd6RyN-nxryTa2TAxWUWT5-h4td2bVJviUDkR-ER_pwSNZF-j7TVSq_w2MBhAzSmYY5mR8Obv1cvmbO3gLNsbh8WTZyF0yhmPCRetdZl9agHMTkieFCtDv_TdoXPWpTEfX4noJbW9lt2Qrwvuh4uJCfEWit9YfDeVv_IGxzjMdaX8PGH29vAiBcNd8pn7tQISkATU8a0OjPrkunA7gGjnWr9fqtzIKmGYwUZ_9K3f1m4-GhqupSqgNPX83we9RDBtr0sNA"/>
+                    <div class="gallery-overlay absolute inset-0 bg-stone-900/60 flex items-end p-6 opacity-0 transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div>
+                            <span class="text-amber-gold text-[10px] font-bold uppercase tracking-widest mb-1 block">Personalizado</span>
+                            <h4 class="text-white font-headline text-xl font-bold">Armário de Luxo</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 7: Cabinet Shelves -->
+                <div class="gallery-item relative aspect-[3/4] overflow-hidden bg-stone-200 group">
+                    <img alt="Prateleiras internas de armário com porta de espelho" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0ugg3QTwG2hErxftCwLmWoMovOXRGQ9HRJTQC7Cy0CFBgo3VZ1dHmSIFCuZbx-4PKZqsekwNPRwO4bGhjkKwVtqpruRAg2B9k_WAThPfkgr30ul6PfnEUExfPQJQGHLYkquGrBsv_mKuQP-5hvP_b9FTBm5j1ifIfChZF8Vrt_ZkXkFvsp8Js1lOLqZ-L3n5VhYD4969bEIm0l3lhumXmzTgDNGRYpVWLdsku3fTmWawpg4TH4Zdw8kSiqzjCul8UhYA4fRoBfriZw"/>
+                    <div class="gallery-overlay absolute inset-0 bg-stone-900/60 flex items-end p-6 opacity-0 transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div>
+                            <span class="text-amber-gold text-[10px] font-bold uppercase tracking-widest mb-1 block">Internos</span>
+                            <h4 class="text-white font-headline text-xl font-bold">Organização Sob Medida</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 10: Mirrored Cabinet -->
+                <div class="gallery-item relative aspect-[3/4] overflow-hidden bg-stone-200 group">
+                    <img alt="Banco ripado e painel de madeira em ambiente moderno" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0ug33g_ytk3RSC0w3GRF6tgFqCxVFQ7hoWJLXBtmqPKaAc7rkDdmEDI1CeovTbLRgN4ybqFfH6cIfBwBxcHSu0HdpZVArctx4AGc4P4fNyGYQE6fIbFBU3eMOtx2sgRrAX7LSz5NiB5U1iJv2VjAee0US1RRrUt33wU9VEt1H5UzE4Mj2XhL93Kg0jZpppN_uposzAfgvdXGelcLDSaYL2v4YjAG83Kwx-5LYjS3e2TO-eeEJuOCqDdNbjnWikP9vzBXCRDHngEh"/>
+                    <div class="gallery-overlay absolute inset-0 bg-stone-900/60 flex items-end p-6 opacity-0 transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div>
+                            <span class="text-amber-gold text-[10px] font-bold uppercase tracking-widest mb-1 block">Recepção</span>
+                            <h4 class="text-white font-headline text-xl font-bold">Banco e Painel Ripado</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col items-center text-center mb-16">
+                <h2 class="font-headline text-4xl md:text-5xl font-black mb-4 tracking-tight">O Que Nossos <span class="text-amber-gold">Clientes Dizem</span></h2>
+                <p class="text-stone-400 text-base">Para nós, cada cliente é um co-autor de uma peça única.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+                <div class="bg-stone-800 p-8 lg:p-12 border border-stone-700/30">
+                    <div class="flex gap-1 mb-6">
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-stone-300 italic leading-relaxed mb-8 text-lg">"O Allef superou todas as expectativas. O painel da TV ficou impecável e a montagem foi extremamente limpa e rápida."</p>
+                    <div>
+                        <p class="font-bold text-white text-lg">Ricardo Silva</p>
+                        <p class="text-[10px] text-amber-gold uppercase tracking-widest font-black">Empresário — SP</p>
+                    </div>
+                </div>
+                <div class="bg-stone-800 p-8 lg:p-12 border border-stone-700/30">
+                    <div class="flex gap-1 mb-6">
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-stone-300 italic leading-relaxed mb-8 text-lg">"Projetamos nosso closet inteiro com ele. O aproveitamento de espaço foi inteligente e o acabamento das portas é sublime."</p>
+                    <div>
+                        <p class="font-bold text-white text-lg">Mariana Costa</p>
+                        <p class="text-[10px] text-amber-gold uppercase tracking-widest font-black">Arquiteta — SP</p>
+                    </div>
+                </div>
+                <div class="bg-stone-800 p-8 lg:p-12 border border-stone-700/30">
+                    <div class="flex gap-1 mb-6">
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-amber-gold text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-stone-300 italic leading-relaxed mb-8 text-lg">"Raro encontrar um profissional tão pontual e caprichoso. Fez reparos em móveis antigos que parecem novos agora."</p>
+                    <div>
+                        <p class="font-bold text-white text-lg">Joaquim Mendes</p>
+                        <p class="text-[10px] text-amber-gold uppercase tracking-widest font-black">Aposentado — Santos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-surface" id="sobre">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div class="relative">
+                    <div class="absolute -top-6 -left-6 w-full h-full border border-stone-200"></div>
+                    <img class="relative z-10 w-full aspect-[4/5] object-cover" data-alt="professional male woodworker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVxQLrba-tff9UD9kzh8nCa_wjJ81ojWhqFrM52Bt34fINLcRbKC8BkoQ4oCD3TI_h_lqwtTQUDTST5aXjQWYItKjHhbUU3Keh45eAT-bGohaMYzhZjqKtqDGWZ8mQhII1M2MY59MfcZjHRLKmJROZPGgBUINvDoOT7fgN6kck1-cyey42YWiTOjKWGv4Fo2trRDZaTytNGATeInZQw8C0HUjEGhngVhmDYvuxjcCoTImroshoKhSdJEPUSZFj7Ny01XbznURKoV0"/>
+                    <div class="absolute -bottom-8 -right-8 bg-amber-gold text-stone-900 p-8 lg:p-10 z-20 hidden lg:block shadow-2xl">
+                        <p class="font-headline text-5xl font-black">12+</p>
+                        <p class="text-[10px] font-black uppercase tracking-[0.4em]">Anos de <br/>Legado</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-amber-gold font-black text-xs tracking-[0.4em] uppercase mb-4 block">O Fundador</span>
+                    <h2 class="font-headline text-5xl lg:text-6xl font-black text-stone-900 mb-8 tracking-tighter leading-tight">Sou Allef Souza, <br/>especialista em móveis <span class="text-amber-gold">planejados.</span></h2>
+                    <p class="text-lg lg:text-xl text-stone-800 leading-relaxed mb-6 font-serif italic">"Trabalho com marcenaria especializada, desenvolvendo soluções personalizadas para transformar ideias em projetos funcionais e bonitos."</p>
+                    <p class="text-stone-500 leading-relaxed mb-8 text-base font-light">Meu objetivo é transformar ideias em projetos funcionais, bonitos e bem aproveitados, sempre respeitando o espaço disponível e o estilo desejado. Cada projeto é desenvolvido com atenção total aos detalhes, garantindo qualidade, durabilidade e um acabamento impecável.</p>
+                    <div class="flex items-center gap-6 pt-6 border-t border-stone-200">
+                        <img class="w-16 h-16 rounded-full object-cover" data-alt="signature of the artisan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhLUt3FPySwTaI8ZV-RoWa5sZkwT7_gTUZqdVFYa6EXHcUTzm_3w8aGkg4dvS5TdJyZMs8Pk3biobfB5oOh_83qw4Q4-4P3c6_DS4jtxnhtE-_oi7yLDOqPqvUpDCnOGG2hKCfV5dAhi1DNPfUUKDasO3n5MSmOmw57SHZibdb4lhQd7GUwMLk1Dssod7qWtuFOcxEYEutMThZxYn7q00elLjKmNOrnYM02ny9rTKnBeEzqrETUAVEvIIugfqfv0-A4uXxBgmrHUc"/>
+                        <div>
+                            <p class="font-headline font-bold text-stone-900 text-xl tracking-tight">Allef Souza</p>
+                            <p class="text-[10px] text-amber-gold uppercase tracking-[0.2em] font-black">Mestre Marceneiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="relative py-24 bg-stone-900 overflow-hidden" id="contato">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/wood-pattern-with-holes.png')]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10 text-center">
+            <h2 class="font-headline text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter">Seu Projeto <span class="text-amber-gold">Começa Aqui</span></h2>
+            <p class="text-stone-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">Se você quer um móvel planejado que realmente se encaixe no seu espaço e na sua rotina, fale agora com Allef Souza e solicite seu orçamento sem compromisso.</p>
+            <div class="flex justify-center">
+                <a class="inline-flex items-center bg-amber-gold text-white px-12 py-5 rounded-none font-black text-xl hover:bg-amber-gold-dark transition-all shadow-3xl group" href="https://wa.me/5511979861292?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20de%20móveis%20planejados" target="_blank">Falar no WhatsApp Agora <span class="material-symbols-outlined ml-4 text-2xl group-hover:translate-x-2 transition-transform">chat</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 w-full py-16 px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="flex flex-col items-start">
+                <span class="font-serif text-2xl text-stone-50 font-bold mb-4 tracking-tighter uppercase">Allef Souza Marcenaria</span>
+                <p class="font-sans text-xs tracking-widest leading-relaxed">
+                    © 2024 Allef Marcenaria. <br/>O mestre do entalhe. <br/>Móveis Sob Medida de Alto Padrão.
+                </p>
+            </div>
+            <div class="flex flex-col gap-3 font-sans text-xs tracking-widest uppercase">
+                <h5 class="text-stone-50 font-bold mb-2">Navegação</h5>
+                <a class="hover:text-amber-400 transition-colors" href="#">Início</a>
+                <a class="hover:text-amber-400 transition-colors" href="#servicos">Serviços</a>
+                <a class="hover:text-amber-400 transition-colors" href="#galeria">Galeria</a>
+                <a class="hover:text-amber-400 transition-colors" href="#sobre">Sobre</a>
+                <a class="hover:text-amber-400 transition-colors" href="#contato">Contato</a>
+            </div>
+            <div class="flex flex-col gap-3 font-sans text-xs tracking-widest uppercase">
+                <h5 class="text-stone-50 font-bold mb-2">Siga o Ofício</h5>
+                <a class="hover:text-amber-400 transition-colors" href="#">Instagram</a>
+                <a class="hover:text-amber-400 transition-colors" href="#">YouTube</a>
+                <a class="hover:text-amber-400 transition-colors" href="#">Pinterest</a>
+                <div class="flex gap-4 mt-4 opacity-80 hover:opacity-100 transition-opacity">
+                    <div class="w-10 h-10 rounded-full border border-stone-800 flex items-center justify-center hover:border-amber-gold hover:text-amber-gold transition-all cursor-pointer">
+                        <span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
